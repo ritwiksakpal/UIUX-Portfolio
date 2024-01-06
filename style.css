@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(39, 39, 94, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* Utility classes */
+section {
+  min-height: 100vh;
+  padding: 4rem 10rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.2rem;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  transition: all ease-in-out 400ms;
+}
+
+.btn-primary-sm {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0.2rem 0 0;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  transition: all ease-in-out 400ms;
+}
+
+.btn-secondary-sm {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0.2rem 0 0;
+  background: blueviolet;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid blueviolet;
+  transition: all ease-in-out 400ms;
+}
+
+.btn-primary:hover,
+.btn-primary-sm:hover {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.btn-secondary {
+  color: whitesmoke;
+  border: 1px solid blueviolet;
+  transition: all ease-in-out 400ms;
+  background-color: blueviolet;
+}
+
+.btn-secondary:hover,
+.btn-secondary-sm:hover {
+  color: rgba(245, 245, 245, 0.767);
+  border: 1px solid blueviolet;
+  background-color: rgba(137, 43, 226, 0.829);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: rgba(245, 245, 245, 0.66);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.text-secondary {
+  color: blueviolet;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 5px 15px;
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 100px;
+  top: 5rem;
+  left: 5vw;
+}
+
+nav > a {
+  padding: 0.6rem 0;
+}
+
+nav > a > svg {
+  fill: blueviolet;
+  transition: all ease-in-out 500ms;
+}
+
+nav > a > svg:hover {
+  fill: whitesmoke;
+}
+
+/* Scroll Down */
+.scroll_down {
+  position: fixed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  bottom: 5rem;
+  right: 2vw;
+  z-index: 1;
+  transform: rotate(90deg);
+}
+
+.scroll_down > a:hover {
+  color: whitesmoke;
+  transition: all ease 500ms;
+}
+
+/* Role Section */
+#role > .role {
+  margin-top: 4rem;
+}
+
+#role > .role_action {
+  text-align: center;
+}
+
+#role > .role > p {
+  text-align: center;
+}
+
+#role > .role > p:nth-child(1) {
+  color: whitesmoke;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#role > .role > p:nth-child(2) {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+#role > .role > p:nth-child(3) {
+  color: rgba(245, 245, 245, 0.66);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+/* About Section */
+#about > .about_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+#about > .about_content > img {
+  border-radius: 5px 20px;
+  margin-right: 3rem;
+}
+
+#about > .about_content > .about_summary > p {
+  color: rgba(245, 245, 245, 0.66);
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#about > .about_content > .about_summary > #idea {
+  font-size: 1.4rem;
+  color: blueviolet;
+}
+
+#about > .about_content > .about_summary > p > span {
+  color: blue;
+}
+
+/* Portfolio Section */
+#portfolio > .portfolio_content {
+  margin-top: 4rem;
+}
+
+#portfolio > .portfolio_content > .card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    202deg,
+    rgba(2, 0, 36, 0.7961309523809523) 0%,
+    rgba(138, 43, 226, 0.3031337535014006) 100%
+  );
+  padding: 1.2rem;
+  border-radius: 15px;
+}
+
+#portfolio > .portfolio_content > .card > img {
+  border-radius: 15px;
+}
+
+#portfolio > .portfolio_content > .card > p {
+  margin-top: 1rem;
+}
+
+#portfolio > .portfolio_content > .card > .btn-action {
+  margin-top: 1.5rem;
+}
+
+/* Testimonials Section */
+#testimonials > .testimonials_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  position: relative;
+}
+
+#testimonials > .testimonials_content > .testimonials_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 25px;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  width: 50vw;
+}
+
+#testimonials > .testimonials_content > .testimonials_card > img {
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+#testimonials > .testimonials_content > .testimonials_card > .review {
+  color: whitesmoke;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+}
+
+/* Hide the images by default */
+#testimonials > .testimonials_content > .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 7rem;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 7rem;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 1rem 2px;
+  background-color: rgb(200, 200, 200, 0.9);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: rgb(100, 100, 100, 0.5);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contact Section */
+#contact > .contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+  column-gap: 6rem;
+}
+
+#contact > .contact_container > .contact_options > .contact_card {
+  padding: 1.4rem;
+  background-color: rgba(137, 43, 226, 0.119);
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+#contact > .contact_container > .contact_options > .contact_card > p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#contact
+  > .contact_container
+  > .contact_options
+  > .contact_card
+  > p:nth-child(2) {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+#contact
+  > .contact_container
+  > .contact_options
+  > .contact_card
+  > p:nth-child(3) {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact > .contact_container > .contact_options > .contact_card > p > a {
+  color: blue;
+}
+
+#contact > .contact_container > .contact_options > .contact_card > p > svg {
+  fill: whitesmoke;
+}
+
+.contact_form > form > input,
+.contact_form > form > textarea {
+  margin-bottom: 1rem;
+  min-width: 70vh;
+  padding: 1.2rem 1rem;
+  resize: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: blueviolet;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 100;
+}
+
+footer > p {
+  color: black;
+}
+
+footer > p:first-child {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+footer > p:last-child {
+  font-size: smaller;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 1.4rem 0;
+}
+
+footer > ul > li {
+  padding: 0.4rem 0;
+  margin: 0 0.5rem;
+}
+
+footer > ul > li > a {
+  color: black;
+  transition: all ease-in-out 400ms;
+}
+
+footer > ul > li > a:hover {
+  color: whitesmoke;
+}
